@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 
 const imagePath = "/new-portfolio/images/projects/";
 const techImagePath = "@/assets/images/tech/";
+const testimonialImagePath = "@/assets/images/testimonials/";
 const githubProfile = "https://github.com/Zeyad-Gamal/";
 
 function createProject(project) {
@@ -18,7 +19,9 @@ function createProject(project) {
     github_url: project.githubName ? githubProfile + `${project.githubName}` : null,
     testimonial: {
       ...project.testimonial,
-      image: `${import.meta.env.BASE_URL}images/testimonials/${project.testimonial.image}`
+      image: project.testimonial.image
+        ? `${import.meta.env.BASE_URL}images/testimonials/${project.testimonial.image}`
+        : null
     }
   };
 }

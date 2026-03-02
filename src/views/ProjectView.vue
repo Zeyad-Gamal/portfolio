@@ -206,7 +206,7 @@ function goBack() {
         <br><br><br><br>
 
         <hr class="border-light">
-
+<div class="problem-and-testimonial">
         <div class="view-container problem" v-if="project.idea">
           <div  class="content"  v-if="project.idea.problem && project.idea.solution">
                 <div v-motion
@@ -252,6 +252,7 @@ function goBack() {
 
 </div>
 
+</div>
 
      
 
@@ -623,7 +624,12 @@ function goBack() {
 
 
 
-
+.problem-and-testimonial{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
 .testimonial-block {
   display: flex;

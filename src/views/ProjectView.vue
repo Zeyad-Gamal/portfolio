@@ -637,6 +637,13 @@ function goBack() {
   /* flex-wrap: wrap; */
   gap: 20px;
 }
+.problem {
+  flex: 1.2;
+}
+
+.testimonial {
+  flex: 1;
+}
 
 .testimonial-block {
   display: flex;

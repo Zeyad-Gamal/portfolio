@@ -60,7 +60,7 @@ const projectsData = [
                 year: "2022",
 
 
-                testimonials: {
+                testimonial: {
                     content: "The BiteQuick website has transformed our restaurant's online presence. Customers can now easily browse our menu and place orders online, which has significantly increased our sales and improved customer satisfaction.",
                     image: "p.png"
                 }

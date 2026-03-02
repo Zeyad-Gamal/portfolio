@@ -236,11 +236,11 @@ function goBack() {
 
         <div class="viewcontainer testimonial">
 
-          <div class="content" v-if="project.testimonial && project.testimonial.length > 0">
+          <div class="content" v-if="project.testimonial.content && project.testimonial.content.length > 0">
             <h2 class="p-address">Testimonial</h2>
 
             <div class="testimonial-block">
-              <div class="testimonial-person"><img src="" alt=""></div>
+              <div class="testimonial-person"><img :src="project.testimonial.image" alt=""></div>
 
               <div class="testimonial-content">
                 <p>{{ project.testimonial }}</p>
@@ -253,29 +253,7 @@ function goBack() {
         </div>
 
 
-        <style>
-.testimonial-block {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-.testimonial-person {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.testimonial-content {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 8px;
-  color: #ccc;
-  font-style: italic;
-}
-        </style>
-
+     
 
 
         
@@ -641,6 +619,38 @@ function goBack() {
     /* display: none; */
     font-size: 15px;
   }
+}
+
+
+
+
+
+.testimonial-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.testimonial-person {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-person img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  color: #ccc;
+  font-style: italic;
 }
 
 </style>

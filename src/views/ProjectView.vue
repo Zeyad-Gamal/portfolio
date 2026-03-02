@@ -629,7 +629,7 @@ function goBack() {
   flex-direction: row;
   background-color: red;
   /* flex-wrap: wrap; */
-  gap: 40px;
+  gap: 20px;
 }
 
 .testimonial-block {
@@ -640,6 +640,7 @@ function goBack() {
 }
 .testimonial-person {
   width: 80px;
+  max-width: 150px;
   height: 80px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);

@@ -627,7 +627,7 @@ function goBack() {
 .problem-and-testimonial{
   display: flex;
   flex-direction: row;
-  background-color: red;
+  
   /* flex-wrap: wrap; */
   gap: 20px;
 }
@@ -639,7 +639,7 @@ function goBack() {
   margin-top: 20px;
 }
 .testimonial-person {
-  width: 80px;
+  width: 150px;
   max-width: 150px;
   height: 80px;
   border-radius: 50%;

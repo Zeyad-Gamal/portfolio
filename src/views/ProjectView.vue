@@ -236,7 +236,7 @@ function goBack() {
 <div class="viewcontainer testimonial">
 
   <div class="content" v-if="project.testimonial?.content?.length">
-    <h2 class="p-address">Testimonial</h2>
+    <h2 class="p-address"></h2>
 
     <div class="testimonial-block">
       <div class="testimonial-person">
@@ -244,7 +244,7 @@ function goBack() {
       </div>
 
       <div class="testimonial-content">
-        <p>{{ project.testimonial.content }}</p>
+        <p>“ {{ project.testimonial.content }} ”</p>
       </div>
     </div>
 

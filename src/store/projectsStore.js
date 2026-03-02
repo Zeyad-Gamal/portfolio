@@ -16,9 +16,9 @@ function createProject(project) {
     ),
     url: `/project/${project.id}`,
     github_url: project.githubName ? githubProfile + `${project.githubName}` : null,
-    testimonials: {
-      ...project.testimonials,
-      image: `${import.meta.env.BASE_URL}images/testimonials/${project.testimonials.image}`
+    testimonial: {
+      ...project.testimonial,
+      image: `${import.meta.env.BASE_URL}images/testimonials/${project.testimonial.image}`
     }
   };
 }

@@ -39,10 +39,18 @@
               text-align: left;justify-content: justify; line-height: 1.4;
             "
           >
-            I am <strong style="color: coral">Zeyad Gamal</strong>. I work as a
+            <!-- I am <strong style="color: coral">Zeyad Gamal</strong>. I work as a
             software developer and my field of work is based on designing and
             developing web pages. I also create and develop desktop and mobile
-            programs. I graduated from computer science at <strong>AAST</strong> in 2024.
+            programs. I graduated from computer science at <strong>AAST</strong> in 2024. -->
+
+
+            I’m Zeyad Gamal! I’m a Full Stack Developer and Backend Specialist based in Egypt. 
+            My passion for coding started when I first explored how software works, and I haven’t looked back since. Over the past 3 years, 
+            I’ve built web platforms, backend systems for mobile apps, and AI-powered solutions — including projects like lung cancer detection with Explainable AI.
+            The reason teams and clients choose to work with me? I focus on creating clean, secure, and scalable systems while adapting to your project needs. 
+            I also integrate DevOps best practices and collaborate with skilled teams to make sure every project runs smoothly from start to finish. 
+            Contact me today to see how we can build something impactful together!
           </p>
 
           <div class="about-contact">

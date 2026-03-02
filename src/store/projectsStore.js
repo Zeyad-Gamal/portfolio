@@ -16,7 +16,10 @@ function createProject(project) {
     ),
     url: `/project/${project.id}`,
     github_url: project.githubName ? githubProfile + `${project.githubName}` : null,
-    
+    testimonials: {
+      ...project.testimonials,
+      image: `${import.meta.env.BASE_URL}images/testimonials/${project.testimonials.image}`
+    }
   };
 }
 
@@ -54,7 +57,13 @@ const projectsData = [
                 role: "Solo",
                 duration: "5 days",
                 status: "Completed",
-                year: "2022"
+                year: "2022",
+
+
+                testimonials: {
+                    content: "The BiteQuick website has transformed our restaurant's online presence. Customers can now easily browse our menu and place orders online, which has significantly increased our sales and improved customer satisfaction.",
+                    image: "p.png"
+                }
             },
 
             {

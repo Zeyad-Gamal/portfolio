@@ -630,13 +630,25 @@ function goBack() {
 
 
 
-.problem-and-testimonial{
+.problem-and-testimonial {
   display: flex;
   flex-direction: row;
-  
-  /* flex-wrap: wrap; */
-  gap: 20px;
+  gap: 30px;
+  align-items: flex-start;
 }
+
+/* Make both sections take equal width */
+.problem-and-testimonial > div {
+  flex: 1;
+}
+
+/*  Mobile Responsive */
+@media (max-width: 992px) {
+  .problem-and-testimonial {
+    flex-direction: column;
+  }
+}
+
 .problem {
   flex: 1.2;
 }
@@ -652,9 +664,8 @@ function goBack() {
   margin-top: 20px;
 }
 .testimonial-person {
-  width: 150px;
-  max-width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
 }

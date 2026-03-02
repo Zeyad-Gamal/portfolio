@@ -626,7 +626,7 @@ function goBack() {
 
 .problem-and-testimonial{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 40px;
 }

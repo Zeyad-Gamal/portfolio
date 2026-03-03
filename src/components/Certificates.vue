@@ -85,6 +85,10 @@ export default {
             image: certificatesPath('Sixty Seventh PlaceContestant537492-1_page-0001.jpg'),
             title: '',
             },
+            {
+            image: certificatesPath('f58a578c-ab49-4a82-8c40-b194340ea24a.webp'),
+            title: '',
+            },
             
       ]
     };

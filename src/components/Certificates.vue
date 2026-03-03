@@ -86,6 +86,10 @@ export default {
             title: '',
             },
             {
+            image: certificatesPath('Zeyad Gamal - Python.png'),
+            title: '',
+            },
+            {
             image: certificatesPath('f58a578c-ab49-4a82-8c40-b194340ea24a.webp'),
             title: '',
             },

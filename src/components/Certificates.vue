@@ -73,10 +73,10 @@ export default {
             image: certificatesPath('hp life.png'),
             title: '',
             },
-            // {
-            // image: certificatesPath('ITI Software testing.jpg'),
-            // title: '',
-            // },
+            {
+            image: certificatesPath('ITI Software testing.jpg'),
+            title: '',
+            },
             {
             image: certificatesPath('Python.jpg'),
             title: '',

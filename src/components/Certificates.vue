@@ -40,7 +40,7 @@ const config = {
 
 <script scoped>
 
-const certificatesPath = (certificate) => `${import.meta.env.BASE_URL}images/certificates/${certificate}`;
+const certificatesPath = (certificate) => `${import.meta.env.BASE_URL}images/certificates/${encodeURIComponent(certificate)}`;
 export default {
   data() {
     return {
@@ -130,8 +130,8 @@ export default {
 
         <div class="carousel-container">
                 <Carousel v-bind="config" >
-                <Slide v-for="certificate in certificates" :key="certificate.title">
-                <img :src="certificate.image"  draggable="false" style="width: 100%; height: 100% !important;" />
+                <Slide v-for="certificate in certificates" :key="certificate.image">
+                <img :src="certificate.image" :alt="certificate.title || 'certificate image'" draggable="false" style="width: 100%; height: 100% !important;" />
                 
                 </Slide>
 

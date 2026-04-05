@@ -39,8 +39,9 @@ const config = {
 
 
 <script scoped>
+const certificatesPath = (certificate) => `${import.meta.env.BASE_URL}src/assets/certificates/${certificate}`;
 
-const certificatesPath = (certificate) => `${import.meta.env.BASE_URL}images/certificates/${certificate}`;
+// const certificatesPath = (certificate) => `${import.meta.env.BASE_URL}images/certificates/${certificate}`;
 export default {
   data() {
     return {

@@ -26,6 +26,7 @@
               color: #db8d76;
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
                 sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
             "
           >
             {{ site.about_jobTitle }}
@@ -45,12 +46,18 @@
             programs. I graduated from computer science at <strong>AAST</strong> in 2024. -->
 
 
-            I’m Zeyad Gamal! I’m a Full Stack Developer and Backend Specialist based in Egypt. 
+            <!-- I’m Zeyad Gamal! I’m a Full Stack Developer and Backend Specialist based in Egypt. 
             My passion for coding started when I first explored how software works, and I haven’t looked back since. Over the past 3 years, 
             I’ve built web platforms, backend systems for mobile apps, and AI-powered solutions — including projects like lung cancer detection with Explainable AI.
             The reason teams and clients choose to work with me? I focus on creating clean, secure, and scalable systems while adapting to your project needs. 
             I also integrate DevOps best practices and collaborate with skilled teams to make sure every project runs smoothly from start to finish. 
-            Contact me today to see how we can build something impactful together!
+            Contact me today to see how we can build something impactful together! -->
+
+
+            I’m Zeyad Gamal, a Backend Developer and DevOps Engineer based in Egypt. I build scalable backend systems, REST APIs, and production-ready cloud infrastructure using technologies like Laravel, Node.js, Python, Docker, Kubernetes, and AWS.
+
+I’m passionate about building clean, secure, and reliable software while combining development and DevOps practices to turn ideas into production-ready solutions.
+
           </p>
 
           <div class="about-contact">

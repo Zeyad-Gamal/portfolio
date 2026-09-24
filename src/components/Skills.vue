@@ -25,6 +25,8 @@ export default {
                 {name:"CI/CD" , percent: 80},
                 {name:"Linux" , percent: 90},
                 {name:"WebSockets" , percent: 90},
+                {name:"DevSecOps" , percent: 90},
+
             
           ]
         },

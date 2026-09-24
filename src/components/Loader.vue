@@ -72,7 +72,7 @@ onMounted(() => {
   color: white;
   rotate: 5deg;
   transform: rotate(90deg);
-  animation: spin 5s linear infinite;
+  animation: spin 4s linear infinite;
   position: absolute;right: 0;
 
   margin-top: 2rem !important;

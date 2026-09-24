@@ -103,9 +103,10 @@ onBeforeUnmount(() => {
           id="home-job"
             style="
  
-              color: #db8d76;
+              color: #E9B09E;
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
                 sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
              "
             class="job-titles"
           >{{ jobTitles }}</span>
@@ -121,7 +122,9 @@ onBeforeUnmount(() => {
             text-align: justify;
           "
         >
-          I am Zeyad Gamal. I work as a software developer and designer, and I graduated from the Faculty of Computers and Information Technology from the <strong>AAST</strong> in 2024
+        I’m Zeyad Gamal, a Backend Developer and DevOps Engineer specializing in building scalable backend systems, REST APIs, and production-ready cloud infrastructure. I graduated with a B.Sc. in Computer Science from AAST in 2024, and I enjoy turning ideas into reliable, deployable software.
+
+          <!-- I am Zeyad Gamal. I work as a software developer and designer, and I graduated from the Faculty of Computers and Information Technology from the <strong>AAST</strong> in 2024 -->
            .
         </p>
 
@@ -158,7 +161,7 @@ onBeforeUnmount(() => {
           <a id="hire-link-pg1" href="#" @click.prevent="scrollToSection('review')" class="main-btn">Hire me</a>
           <a
             id="resume-link-pg1"
-            href="cv/resume.docx"
+            href="cv/Zeyad_Gamal_Abosetta_DevOps_Cloud_Engineer.pdf"
             target="_blank"
             class="main-btn"
             

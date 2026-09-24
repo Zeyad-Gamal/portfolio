@@ -42,6 +42,7 @@ const projectStore = useProjectsStore();
     <li><a class="dropdown-item" @click="projectStore.setFilter('all')">All</a></li>
     <li><a class="dropdown-item" @click="projectStore.setFilter('frontend')">Frontend</a></li>
     <li><a class="dropdown-item" @click="projectStore.setFilter('backend')">Backend</a></li>
+    <li><a class="dropdown-item" @click="projectStore.setFilter('devops')">DevOps</a></li>
     <li><a class="dropdown-item" @click="projectStore.setFilter('fullstack')">Fullstack</a></li>
     <li><a class="dropdown-item" @click="projectStore.setFilter('Training Project')">Training</a></li>
     <li><a class="dropdown-item" @click="projectStore.setFilter('mini')">Mini tasks</a></li>

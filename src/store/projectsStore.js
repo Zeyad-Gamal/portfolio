@@ -30,47 +30,177 @@ function createProject(project) {
 
 const projectsData = [
 
+    {
+    id: 28,
+    name: "Dokkanco",
+    title: "DevOps & Production Deployment",
+    description: "Production-ready DevOps infrastructure and CI/CD pipeline for a WhatsApp-first reseller storefront platform, deployed with Docker on Railway with automated builds, versioned container images, database backups, object storage, and production health checks.",
+    githubName: "",
+    demo_url: "https://dokkanco.store",
+    images: ["1.png"],
+
+    tech: [
+        'docker',
+        'github',
+        'railway',
+        'mysql',
+        'cloudflare',
+        'linux'
+    ],
+
+    points: [
+        'Designed and deployed the production environment for the Dokkanco reseller storefront platform.',
+        'Containerized the Laravel 13 backend using Docker with PHP 8.3 for a reproducible production environment.',
+        'Implemented GitHub Actions CI/CD to automatically validate the application, run Laravel tests, build Docker images, and publish versioned images to Docker Hub.',
+        'Implemented commit-based Docker image tagging to provide traceable and reproducible production deployments.',
+        'Deployed the containerized Laravel backend on Railway and configured a managed MySQL database using Railway private networking.',
+        'Configured Cloudflare R2 as object storage for production product images with public image delivery.',
+        'Implemented automated MySQL database backups using mysqldump, gzip compression, and a dedicated Railway backup service.',
+        'Stored database backups in a private Cloudflare R2 bucket with automated 30-day retention.',
+        'Implemented a production health check endpoint covering application, database, cache, and storage availability.',
+        'Configured separate production domains for the frontend and backend with Cloudflare DNS and HTTPS.',
+        'Implemented production smoke testing covering authentication, storefronts, products, image uploads, and customer ordering flows.'
+    ],
+
+    technologies: [
+        "Docker Used to containerize the Laravel backend and provide a reproducible production runtime.",
+        "GitHub Actions Used to automate dependency validation, testing, Docker image building, and image publishing.",
+        "Docker Hub Used as the container registry for storing versioned production Docker images.",
+        "Railway Used as the production hosting platform for the containerized Laravel backend, managed MySQL database, and scheduled backup service.",
+        "MySQL Used as the production relational database hosted as a managed Railway service.",
+        "Cloudflare R2 Used as object storage for product images and private database backups.",
+        "Cloudflare Used for DNS management, domain routing, and HTTPS for the production frontend and API domains.",
+        "PHP 8.3 Used as the production runtime for the Laravel backend.",
+        "Laravel 13 Used to build the production REST API with Sanctum Bearer Token authentication.",
+        "Vue 3 Used for the production frontend, deployed as a static application on Cloudflare Pages.",
+        "Git & GitHub Used for source control, version tracking, CI/CD triggering, and release management.",
+        "mysqldump Used to create consistent production database backups.",
+        "gzip Used to compress database backup files before storage.",
+        "Health Checks Used to verify application, database, cache, and storage availability in production."
+    ],
+
+    idea: {
+        overview: "A production DevOps environment for Dokkanco, a WhatsApp-first reseller storefront platform. The infrastructure combines Docker, GitHub Actions, Docker Hub, Railway, MySQL, Cloudflare R2, and Cloudflare DNS to provide a reproducible deployment workflow with versioned releases, automated backups, and production health checks.",
+
+        problem: "Deploying and maintaining a production application manually can lead to inconsistent environments, difficult releases, limited rollback traceability, and data-loss risks. Dokkanco required a reliable deployment workflow that could support a real production application while remaining simple and cost-efficient for its early-stage usage.",
+
+        solution: "A complete production workflow was implemented where GitHub Actions validates and tests application changes, builds versioned Docker images, and publishes them to Docker Hub. Railway runs the production backend and managed MySQL database, while Cloudflare R2 handles product images and private database backups. Automated scheduled backups, 30-day retention, commit-based image versioning, and health checks provide additional reliability and operational control."
+    },
+
+    type: "devops",
+    role: "solo",
+    duration: "Ongoing",
+    status: "Live",
+    year: "2026"
+},
+
             {
-                id: 1,
-                name: "BiteQuick",
-                title: "Restaurant Website",
-                description: "A restaurant management system that allows users to browse the menu, place orders",
+                id: 26,
+                name: "Waste Bank",
+                title: "Recycling company",
+                description: "A comprehensive management system for a waste purchasing and recycling platform",
                 githubName: "",
                 demo_url:"",
-                images: ["1.png"],
-                tech:  ['html5','css3','javascript','bootstrap'],
-                points:[
-                    'From scratch design and development',
-                    'It is have a dynamic menu that can be updated easily',
-                    'Users can place orders online',
-                    'Contact form for users to send inquiries'
+                images: ["2.png","1.png"],
+                tech:['websocket','jwt','javascript','sequelize','nodejs','express','mysql'],
+                points: [
+                    'Node.js & Express backend providing RESTful APIs for the Waste Bank platform.',
+                    'JWT-based authentication and role-based access control for Admins, Factories, and other users.',
+                    'Sequelize ORM with a relational database for managing users, factories, requests, offers, purchases, sales, inventory, and shipments.',
+                    'Real-time notifications using Socket.IO for instant updates and system events.',
+                    'Email verification and notification services for secure account activation and user communication.',
+                    'Scalable architecture designed to support the Admin Dashboard now and future mobile applications.',
                 ],
-                idea: {
-                    overview:"A restaurant website that allows users to easily access the menu, place orders online, and contact the restaurant for inquiries or reservations.",
-                    problem: "The restaurant was having trouble finding the menu easily, and there was also a rush for orders because there was no way to order other than going to the restaurant or by phone.",
-                    solution: "The solution was to create a website that includes the restaurant's menu and is automatically updated based on new offerings, as well as a contact form for communicating with the restaurant and making reservations."
-                },
 
                 technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3 and Bootstrap to style the web pages and make them responsive",
-                    "JavaScript to add interactivity and dynamic features"
+                    "JS (Node.js) Used as the primary programming language for building the backend and implementing business logic.",
+                    "Express.js Used to build RESTful APIs, routes, controllers, and middleware.",
+                    "Sequelize ORM Used for database modeling, relationships, queries, transactions, and data management.",
+                    "MySQL Used as the relational database for storing users, factories, requests, offers, purchases, sales, inventory, shipments, and notifications.",
+                    "JWT (JSON Web Tokens) Used for secure user authentication and protected API access.",
+                    "Socket.IO Used to provide real-time notifications and instant updates between the backend and connected clients.",
+                    "Joi Used for validating and sanitizing incoming API request data.",
+                    "bcrypt Used for securely hashing and verifying user passwords.",
+                    "Nodemailer / Email Service Used for email verification and system-related email communication.",
+                    "REST API Used as the main communication layer between the backend and the Admin Dashboard, with support for future mobile applications."
                 ],
 
-                type: "frontend",
+                idea:{
+                    overview:"A scalable backend system for a Waste Bank platform that manages the complete waste trading lifecycle, including factories, factory requests, offers, purchases, sales, inventory, shipments, notifications, and user authentication. The system provides secure REST APIs, real-time notifications, email verification, and role-based access control, with an architecture designed to support both web and future mobile applications.",
+                    problem: "Traditional waste collection and trading processes can involve disconnected operations, manual tracking, and limited visibility across factories, purchases, sales, inventory, and shipments. This makes it difficult to manage the complete workflow efficiently and keep all parties updated on important actions and status changes.",
+                    solution: "The system provides a centralized backend that connects the main waste management workflows into a single platform. It manages the lifecycle from factory requests and offers to purchases, inventory, sales, and shipments, while providing secure authentication, automated email verification, real-time notifications, validation, and role-based access control. The API-first architecture also allows the same backend to serve the current Admin Dashboard and future mobile applications."
+                },
 
-                role: "Solo",
-                duration: "5 days",
+
+                type: "backend",
+                role: "solo",
+                duration: "2 months",
                 status: "Completed",
-                year: "2022",
-
-
-                testimonial: {
-                    content: "The BiteQuick website has transformed our restaurant's online presence. Customers can now easily browse our menu and place orders online, which has significantly increased our sales and improved customer satisfaction.",
-                    image: "p.png",
-                    name: "Ahmed Hassan"
-                }
+                year: "2026"
             },
+
+    {
+id: 27,
+name: "Waste Bank",
+title: "DevOps & Cloud Deployment",
+description: "Production-ready DevOps infrastructure and CI/CD pipeline for a containerized Waste Bank platform, deployed on AWS EC2 with automated builds, security scanning, and continuous delivery.",
+githubName: "",
+demo_url: "",
+images: ["1.png"],
+tech: [
+'aws',
+'docker',
+'github',
+'nginx',
+'linux',
+'mysql'
+],
+
+points: [
+    'Designed and deployed a production environment on AWS EC2 for the Waste Bank platform.',
+    'Containerized the backend, MySQL database, and Nginx reverse proxy using Docker and Docker Compose.',
+    'Implemented GitHub Actions CI/CD to automatically test, build, scan, publish, and deploy Docker images to the production server.',
+    'Integrated Docker Hub as the container image registry with commit-based image tagging for traceable deployments.',
+    'Integrated Trivy vulnerability scanning into the CI pipeline to detect HIGH and CRITICAL vulnerabilities in container images.',
+    'Configured Nginx as a reverse proxy with support for REST APIs, file uploads, and Socket.IO connections.',
+    'Implemented automated production database migrations and post-deployment health checks with retry handling.',
+    'Configured persistent Docker volumes for MySQL data and application uploads while keeping the database isolated from public access.'
+],
+
+technologies: [
+    "AWS EC2 Used as the production compute environment for hosting the containerized application.",
+    "Docker Used to containerize the backend application and production services with isolated and reproducible environments.",
+    "Docker Compose Used to orchestrate the application, MySQL database, and Nginx services in the production environment.",
+    "GitHub Actions Used to automate testing, Docker image building, vulnerability scanning, image publishing, and production deployment.",
+    "Docker Hub Used as the container registry for storing and distributing versioned production images.",
+    "Nginx Used as a reverse proxy and HTTP entry point for routing requests to the backend container.",
+    "Trivy Used to scan production Docker images for OS and dependency vulnerabilities.",
+    "Linux Used as the operating system and administration environment for the AWS EC2 production server.",
+    "MySQL Used as the production relational database running in an isolated Docker container with persistent storage.",
+    "Git & GitHub Used for source control, collaboration, version tracking, and triggering the CI/CD workflow.",
+    "Sequelize CLI Used to execute and manage production database migrations during deployment.",
+    "Docker Volumes Used for persistent MySQL database storage and application file uploads."
+],
+
+idea: {
+    overview: "A production DevOps environment for the Waste Bank platform that automates the delivery of a containerized backend from GitHub to AWS EC2. The infrastructure combines Docker, Docker Compose, Nginx, GitHub Actions, Docker Hub, and Trivy to provide a repeatable and security-aware deployment workflow.",
+
+    problem: "Deploying backend applications manually can lead to inconsistent environments, deployment errors, difficult rollbacks, and limited visibility into container security. The Waste Bank platform required a reliable way to move tested application changes from the development repository into a running production environment.",
+
+    solution: "A complete CI/CD workflow was implemented to automatically test code changes, build versioned Docker images, scan them for vulnerabilities, publish them to Docker Hub, and deploy them to AWS EC2. Docker Compose manages the production services, Nginx handles incoming traffic and reverse proxying, persistent volumes protect database and uploaded-file data, and automated migrations and health checks validate successful deployments."
+},
+
+type: "devops",
+role: "solo",
+duration: "10 days",
+status: "Completed",
+year: "2026"
+
+
+},
+
+
+
 
             {
     id: 25,
@@ -78,7 +208,7 @@ const projectsData = [
     title: "Medca Management System",
     description: "A backend RESTful API system for managing medical equipment manufacturing operations, products, customer requests, and the company's public website.",
     githubName: "",
-    demo_url: "",
+    demo_url: "https://medca-solutions.com",
     images: [
         "1.png",
         "2.png",
@@ -128,45 +258,6 @@ const projectsData = [
     status: "Completed",
     year: "2025"
             },
-            
-            {
-                id: 2,
-                name: "Rusukh company",
-                title: "Rusukh company system",
-                description: "An internal system specific to the company helps company management control company operations, internal conversations, and file sharing.",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
-                tech:  ['html5','css3','javascript','bootstrap','jquery','php','mysql'],
-                points:[
-                    'From scratch design and development',
-                    'User authentication and authorization system',
-                    'File sharing system',
-                    'Internal messaging system',
-                    'Task management system'
-                ],
-
-                idea: {
-                    overview:"An internal system specific to the company helps the company's management to carry out administrative operations, such as organizing the company's digitized files and documents, creating organizational files, uploading any type of file, assigning files and tasks to employees, and creating employee emails. This system enjoys all security features.",
-                    problem: "The company was facing challenges in managing its internal operations, communication, and file sharing among employees. There was a need for a centralized system to streamline these processes and improve overall efficiency.",
-                    solution: "The solution was to develop a custom internal system that would address the specific needs of the company. This system would include features such as user authentication, file sharing, internal messaging, and task management, allowing employees to collaborate more effectively and manage their work more efficiently."
-                },
-
-                technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3 and Bootstrap to style the web pages and make them responsive",
-                    "JavaScript and jQuery to add interactivity and dynamic features",
-                    "PHP to handle server-side logic and database interactions",
-                    "MySQL to store and manage application data"
-                ],
-
-                type: "fullstack",
-
-                role: "Solo",
-                duration: "4 days",
-                status: "Completed",
-                year: "2024"
-            },
 
             {
                 id: 3,
@@ -210,84 +301,6 @@ const projectsData = [
                 duration: "10 days",
                 status: "Completed",
                 year: "2025"
-            },
-
-            {
-                id: 4,
-                name: "Baitak app",
-                title: "M-commerce app",
-                description: "A mobile commerce app that allows users to buy and sell products online",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png"],
-                tech:  ['php','mysql','paymob'],
-                points:[
-                    'From scratch design and development',
-                    'User authentication and authorization system',
-                    'Displaying products in their respective categories',
-                    'Ordering products via social media from within the app',
-                    'An application that allows merchants and users to buy and sell in exchange for a subscription.'
-                ],
-
-                idea: {
-                    overview:"A mobile commerce application that enables users to buy and sell products online. The app provides a platform for merchants to showcase their products and for users to browse and make purchases conveniently from their mobile devices.",
-                    problem: "The problem is the difficulty faced by merchants in reaching a wider audience and the inconvenience for users to find and purchase products from various sellers in one place.",
-                    solution: "The solution is to develop a mobile commerce app that serves as a centralized platform for merchants and users. The app will allow merchants to create profiles, list their products, and manage orders, while users can easily browse through different categories, view product details, and make purchases directly from the app."
-                },
-
-                technologies: [
-                    "PHP to handle server-side logic and database interactions",
-                    "MySQL to store and manage application data",
-                    "Paymob to facilitate secure online payments and transactions within the app",
-                    "JWT for secure user authentication and authorization"
-                ],
-
-                type: "backend",
-
-                role: "Solo",
-                duration: "45 days",
-                status: "Completed",
-                year: "2025"
-            },
-
-            {
-                id: 7,
-                name: "Medical web dashboard",
-                title: "Dashboard Website",
-                description: "A web dashboard for medical processes for graduation project",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png"],
-                tech:['html5','css3','javascript','bootstrap','jquery','php','mysql'],
-
-                points: [
-                    'From scratch design and development',
-                    'User authentication and authorization system',
-                    'Centralized system for managing medical processes',
-                    'Access and manage patient information, appointments, and medical records'
-                ],
-
-                idea: {
-                    overview:"A web dashboard for managing medical processes, designed as a graduation project. The dashboard provides an interface for healthcare professionals to access and manage patient information, appointments, and medical records.",
-                    problem: "The problem is the lack of a centralized system for managing medical processes, which can lead to inefficiencies and difficulties in accessing patient information.",
-                    solution: "The solution is to develop a web dashboard that consolidates medical processes into a single platform. This dashboard will allow healthcare professionals to easily access patient information and update medical records, improving overall efficiency and patient care."
-              },
-
-                technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3 and Bootstrap to style the web pages and make them responsive",
-                    "JavaScript and jQuery to add interactivity and dynamic features",
-                    "PHP to handle server-side logic and database interactions",
-                    "MySQL to store and manage application data"
-                ],
-
-                type: "fullstack",
-
-
-                role: "Solo",
-                duration: " 1 week",
-                status: "Completed",
-                year: "2024"
             },
 
             {
@@ -338,6 +351,44 @@ const projectsData = [
             },
 
             {
+                id: 4,
+                name: "Baitak app",
+                title: "M-commerce app",
+                description: "A mobile commerce app that allows users to buy and sell products online",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:  ['php','mysql','paymob'],
+                points:[
+                    'From scratch design and development',
+                    'User authentication and authorization system',
+                    'Displaying products in their respective categories',
+                    'Ordering products via social media from within the app',
+                    'An application that allows merchants and users to buy and sell in exchange for a subscription.'
+                ],
+
+                idea: {
+                    overview:"A mobile commerce application that enables users to buy and sell products online. The app provides a platform for merchants to showcase their products and for users to browse and make purchases conveniently from their mobile devices.",
+                    problem: "The problem is the difficulty faced by merchants in reaching a wider audience and the inconvenience for users to find and purchase products from various sellers in one place.",
+                    solution: "The solution is to develop a mobile commerce app that serves as a centralized platform for merchants and users. The app will allow merchants to create profiles, list their products, and manage orders, while users can easily browse through different categories, view product details, and make purchases directly from the app."
+                },
+
+                technologies: [
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data",
+                    "Paymob to facilitate secure online payments and transactions within the app",
+                    "JWT for secure user authentication and authorization"
+                ],
+
+                type: "backend",
+
+                role: "Solo",
+                duration: "45 days",
+                status: "Completed",
+                year: "2025"
+            },
+
+            {
                 id: 14,
                 name: "Faroon academy",
                 title: "Educational platform",
@@ -379,6 +430,137 @@ const projectsData = [
                 status: "Completed",
                 year: "2024"
             },
+            
+            {
+                id: 2,
+                name: "Rusukh company",
+                title: "Rusukh company system",
+                description: "An internal system specific to the company helps company management control company operations, internal conversations, and file sharing.",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
+                tech:  ['html5','css3','javascript','bootstrap','jquery','php','mysql'],
+                points:[
+                    'From scratch design and development',
+                    'User authentication and authorization system',
+                    'File sharing system',
+                    'Internal messaging system',
+                    'Task management system'
+                ],
+
+                idea: {
+                    overview:"An internal system specific to the company helps the company's management to carry out administrative operations, such as organizing the company's digitized files and documents, creating organizational files, uploading any type of file, assigning files and tasks to employees, and creating employee emails. This system enjoys all security features.",
+                    problem: "The company was facing challenges in managing its internal operations, communication, and file sharing among employees. There was a need for a centralized system to streamline these processes and improve overall efficiency.",
+                    solution: "The solution was to develop a custom internal system that would address the specific needs of the company. This system would include features such as user authentication, file sharing, internal messaging, and task management, allowing employees to collaborate more effectively and manage their work more efficiently."
+                },
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3 and Bootstrap to style the web pages and make them responsive",
+                    "JavaScript and jQuery to add interactivity and dynamic features",
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data"
+                ],
+
+                type: "fullstack",
+
+                role: "Solo",
+                duration: "4 days",
+                status: "Completed",
+                year: "2024"
+            },
+
+
+
+            {
+                id: 1,
+                name: "BiteQuick",
+                title: "Restaurant Website",
+                description: "A restaurant management system that allows users to browse the menu, place orders",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:  ['html5','css3','javascript','bootstrap'],
+                points:[
+                    'From scratch design and development',
+                    'It is have a dynamic menu that can be updated easily',
+                    'Users can place orders online',
+                    'Contact form for users to send inquiries'
+                ],
+                idea: {
+                    overview:"A restaurant website that allows users to easily access the menu, place orders online, and contact the restaurant for inquiries or reservations.",
+                    problem: "The restaurant was having trouble finding the menu easily, and there was also a rush for orders because there was no way to order other than going to the restaurant or by phone.",
+                    solution: "The solution was to create a website that includes the restaurant's menu and is automatically updated based on new offerings, as well as a contact form for communicating with the restaurant and making reservations."
+                },
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3 and Bootstrap to style the web pages and make them responsive",
+                    "JavaScript to add interactivity and dynamic features"
+                ],
+
+                type: "frontend",
+
+                role: "Solo",
+                duration: "5 days",
+                status: "Completed",
+                year: "2022",
+
+
+                testimonial: {
+                    content: "The BiteQuick website has transformed our restaurant's online presence. Customers can now easily browse our menu and place orders online, which has significantly increased our sales and improved customer satisfaction.",
+                    image: "p.png",
+                    name: "Ahmed Hassan"
+                }
+            },
+
+
+
+
+
+            {
+                id: 7,
+                name: "Medical web dashboard",
+                title: "Dashboard Website",
+                description: "A web dashboard for medical processes for graduation project",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:['html5','css3','javascript','bootstrap','jquery','php','mysql'],
+
+                points: [
+                    'From scratch design and development',
+                    'User authentication and authorization system',
+                    'Centralized system for managing medical processes',
+                    'Access and manage patient information, appointments, and medical records'
+                ],
+
+                idea: {
+                    overview:"A web dashboard for managing medical processes, designed as a graduation project. The dashboard provides an interface for healthcare professionals to access and manage patient information, appointments, and medical records.",
+                    problem: "The problem is the lack of a centralized system for managing medical processes, which can lead to inefficiencies and difficulties in accessing patient information.",
+                    solution: "The solution is to develop a web dashboard that consolidates medical processes into a single platform. This dashboard will allow healthcare professionals to easily access patient information and update medical records, improving overall efficiency and patient care."
+              },
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3 and Bootstrap to style the web pages and make them responsive",
+                    "JavaScript and jQuery to add interactivity and dynamic features",
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data"
+                ],
+
+                type: "fullstack",
+
+
+                role: "Solo",
+                duration: " 1 week",
+                status: "Completed",
+                year: "2024"
+            },
+
+    
+
+
 
             {
                 id: 15,

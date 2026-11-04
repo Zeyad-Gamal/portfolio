@@ -336,21 +336,27 @@ gap: 1rem;
     font-size:2rem;
     font-weight: 500;
     border-radius: 2rem;
-    background-color: #285AEB;
-    color: #eee;
+    /* background-color: #285AEB; */
+    background-color: var(--contact-btn-bg);
+    color: var(--contact-btn-text);
     text-decoration: none;
     padding: 7px 18px;
     margin-left: 0 !important;
 
     transition: 1s;
-
+    border-style: solid;
+    border-color: var(--contact-btn-border);
 
     cursor: pointer;
 }
 
 .contact .form .review-form .send-msg-btn:hover{
-    background-color: #2859ebd2;
+    /* background-color: #2859ebd2; */
 
+
+    background-color: var(--contact-btn-hover-bg);
+    color: var(--contact-btn-hover-text);
+    border-color: var(--contact-btn-hover-border);
 
 }
 

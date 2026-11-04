@@ -100,7 +100,7 @@ const projectsData = [
                 title: "Recycling company",
                 description: "A comprehensive management system for a waste purchasing and recycling platform",
                 githubName: "",
-                demo_url:"",
+                demo_url:"https://appdistribution.firebase.google.com/i/ed726066b9599e45",
                 images: ["2.png","1.png"],
                 tech:['websocket','jwt','javascript','sequelize','nodejs','express','mysql'],
                 points: [
@@ -145,7 +145,7 @@ name: "Waste Bank",
 title: "DevOps & Cloud Deployment",
 description: "Production-ready DevOps infrastructure and CI/CD pipeline for a containerized Waste Bank platform, deployed on AWS EC2 with automated builds, security scanning, and continuous delivery.",
 githubName: "",
-demo_url: "",
+demo_url: "https://appdistribution.firebase.google.com/i/ed726066b9599e45",
 images: ["1.png"],
 tech: [
 'aws',
@@ -265,7 +265,7 @@ year: "2026"
                 title: "Embassy organization system",
                 description: "An internal system to manage the company processes",
                 githubName: "",
-                demo_url:"",
+                demo_url:"https://printerzone.shop/",
                 images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"],
                 tech:  [
                     // 'html5','css3','javascript','bootstrap','jquery',
@@ -356,7 +356,7 @@ year: "2026"
                 title: "M-commerce app",
                 description: "A mobile commerce app that allows users to buy and sell products online",
                 githubName: "",
-                demo_url:"",
+                demo_url:"https://play.google.com/store/apps/details?id=com.techmark.betak&pcampaignid=web_share",
                 images: ["1.png"],
                 tech:  ['php','mysql','paymob'],
                 points:[
@@ -393,8 +393,8 @@ year: "2026"
                 name: "Faroon academy",
                 title: "Educational platform",
                 description: "An educational platform that provides courses and learning materials for students",
-                githubName: "j",
-                demo_url:"u",
+                githubName: "",
+                demo_url:"fr3oonacademy.com",
                 images: ["1.png"],
                 
                 tech:['html5','css3','javascript','bootstrap','jquery','php','mysql'],
@@ -437,7 +437,7 @@ year: "2026"
                 title: "Rusukh company system",
                 description: "An internal system specific to the company helps company management control company operations, internal conversations, and file sharing.",
                 githubName: "",
-                demo_url:"",
+                demo_url:"https://share.rusukh.com/",
                 images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
                 tech:  ['html5','css3','javascript','bootstrap','jquery','php','mysql'],
                 points:[
@@ -1198,7 +1198,7 @@ export const useProjectsStore = defineStore("projects", {
     }),
 
     getters: {
-    three: (state) => state.projects.slice(0, 8),
+    three: (state) => state.projects.slice(0, 6),
     all: (state) => state.projects,
     byId: (state) => (id) => {
         return state.projects.find(project => project.id === id);

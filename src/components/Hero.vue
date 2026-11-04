@@ -103,7 +103,7 @@ onBeforeUnmount(() => {
           id="home-job"
             style="
  
-              color: #E9B09E;
+              color: var(--text-secondary);
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
                 sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-weight: bold;
@@ -206,5 +206,9 @@ onBeforeUnmount(() => {
 
   a{
     text-decoration: none;
+  }
+
+  .heading-title{
+    color: var(--heading-color) !important;
   }
 </style>

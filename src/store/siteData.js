@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 
 export const useSiteDataStore = defineStore("siteData", {
   state: () => ({
-    name: "Zeyad Gamal",
+    name: "Ziad Zayed",
     about_jobTitle: "DevOps & Backend Engineer",
     jobTitles: [
   "Backend Developer",
@@ -12,7 +12,7 @@ export const useSiteDataStore = defineStore("siteData", {
     socials: {
       facebook: "https://www.facebook.com/zeyad.abosetta.9",
       linkedin: "https://www.linkedin.com/in/zeyadabosetta",
-      whatsapp: "https://wa.me/+20109-701-1799",
+      whatsapp: "https://wa.me/+201097011799",
       github: "https://github.com/Zeyad-Gamal",
       instagram: "https://www.instagram.com/zeyad_2552002",
       twitter: "https://x.com/ZAbosetta",

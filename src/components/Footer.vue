@@ -114,7 +114,8 @@
 }
 
 .footer .box-container .box a i{
-    color: coral;
+    /* color: coral; */
+    color: var(--icon-accent);
     padding-right: .5rem;
     transition: .2s linear;
 }
@@ -134,6 +135,8 @@
 }
 
 .footer .credit span{
-    color: coral;
+    /* color: coral; */
+    color: var(--icon-accent);
+
 }
 </style>

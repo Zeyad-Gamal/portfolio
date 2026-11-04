@@ -180,7 +180,7 @@ onBeforeUnmount(() => {
       
       <section
         class="skills-packages"
-        style="background-color: rgba(19, 19, 77, 0.551);width: 100%;"
+        style="width: 100%;"
         >
                   <h1 id="title-skills" class="heading-title" style="color: whitesmoke">
             Skills
@@ -237,6 +237,10 @@ onBeforeUnmount(() => {
         /* gap: 3rem; */
     }
 
+    .skills .skills-packages{
+      background-color: var(--bg-secondary);
+    }
+
 
 
     .skills .box-container{
@@ -270,11 +274,13 @@ onBeforeUnmount(() => {
       0 6px 20px 0 rgba(15, 9, 9, 0.2);
 
     height: 3rem;
+    background-color: var(--progress-bg);
   }
 
   .skills .skills-packages .box-container .box .progress .progress-bar {
     border-top-right-radius: 10rem;
-    background-color: rgba(178, 115, 63, 1);
+    /* background-color: rgba(178, 115, 63, 1); */
+    background-color: var(--progress-fill);
     box-shadow: 0 4px 8px 0 rgb(18, 9, 9),
       0 6px 20px 0 rgba(15, 9, 9, 0.964);
     overflow: hidden; 
@@ -285,7 +291,10 @@ onBeforeUnmount(() => {
   .skills .skills-packages .box-container .box .progress .progress-bar span {
     font-size: 1.5rem;
     font-weight: 600;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    color: var(--progress-text);
+    text-shadow: none;
+    font-weight: 600;
+
   }
 
 

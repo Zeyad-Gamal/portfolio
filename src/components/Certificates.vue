@@ -119,7 +119,7 @@ export default {
       <section
         id="home-packages"
         class="packages"
-        style="background-color: rgba(19, 19, 77, 0.551);width: 100%;"
+        style="width: 100%;"
       >
         <div>
           <h1 class="heading-title address-title" style="color: whitesmoke">
@@ -162,6 +162,11 @@ export default {
 
   .certificates .packages {
     padding-inline: 2rem;
+    background-color: var(--bg-secondary);
+  }
+
+  .packages{
+    background-color: var(--bg-secondary);
   }
 
   .certificates .packages .box-container .box .certf-slider:hover{

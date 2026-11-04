@@ -16,7 +16,7 @@ const projectStore = useProjectsStore();
     >
       <section
         class="packages"
-        style="background-color: rgba(19, 19, 77, 0.551);width: 100%;"
+        style="width: 100%;"
       >
         <div>
           <h1 class="heading-title address-title" style="color: whitesmoke">
@@ -79,20 +79,22 @@ const projectStore = useProjectsStore();
   
   .portfolio .packages {
     padding-inline: 2rem;
+    background-color: var(--bg-secondary);
   }
 
   
   .portfolio .packages .box-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 2rem;
   }
 
   .portfolio .packages .box-container .box {
     box-shadow: var(--box-shadow);
-    background-color: transparent;
-    border-color: rgba(211, 211, 223, 0.258);
+    background-color: var(--bg-card);
+    /* border-color: rgba(211, 211, 223, 0.258); */
+    border-color: var(--project-border);
     border-style: solid;
     border-width: 0.3rem;
     align-items: center; /* Center items vertically */
@@ -102,6 +104,10 @@ const projectStore = useProjectsStore();
     position: relative;
   }
 
+
+    .portfolio .packages .box-container .box:hover{
+    border-color: var(--project-border-hover);
+    }
 
 
   .portfolio .packages .box-container .box .content i img {
@@ -143,11 +149,11 @@ const projectStore = useProjectsStore();
 
 
                 .portfolio .packages .box-container .box .image .badge{
-                position: absolute;background-color: #111;opacity: 1; top: 0;right: 0;height: 100%;width: 10%;border-bottom-right-radius: 2rem;border-top-right-radius: 2rem;padding-block: 40px;
+                position: absolute;background-color: var(--category-bg);opacity: 1; top: 0;right: 0;height: 100%;width: 10%;border-bottom-right-radius: 2rem;border-top-right-radius: 2rem;padding-block: 40px;
               }
 
               .portfolio .packages .box-container .box .image .badge h1{
-                font-size: 2rem;padding: 0;transform: rotate(90deg);position: relative; text-transform: capitalize;color: ghostwhite;
+                font-size: 2rem;padding: 0;transform: rotate(90deg);position: relative; text-transform: capitalize;color: var(--category-text);
               }
 
 
@@ -166,11 +172,7 @@ const projectStore = useProjectsStore();
   border-radius: 2rem;
 
   /* Gradient background */
-  background: linear-gradient(
-    10deg,
-    rgb(0, 0, 0),       /* dark */
-    rgba(255, 255, 255, 0)    /* light/transparent */
-  );
+  background: var(--project-overlay);
 
   opacity: 0;                 /* hidden but still present */
   transition: opacity 0.4s ease;   /* smooth fade in */
@@ -180,6 +182,7 @@ const projectStore = useProjectsStore();
 .portfolio .packages .box-container .box:hover .content {
   opacity: 1;                 /* fade in smoothly */
 }
+
 
 .portfolio .packages .box-container .box:hover .image img{
   opacity: 0.8;
@@ -202,21 +205,29 @@ const projectStore = useProjectsStore();
 
   .portfolio .packages .box-container .box .content .container .project-title {
     font-size: 2rem;
-    color: var(--white);
+    color: var(--project-title-highlight);
   }
 
   .portfolio .packages .box-container .box .content .container .project-description {
     font-size: 1.3rem;
-    color: var(--white);
+    color: var(--text-secondary);
 
     text-align: left;
     margin-left: 2rem;
+    /* background-color: red; */
   }
 
   .portfolio .packages .box-container .box .content .container .project-description span{
     font-size: 2rem;
     font-weight: 800;
-    color: rgb(238, 127, 36);
+    color: var(--project-title-color);
+    /* color: rgb(238, 127, 36); */
+    background-color: var(--project-title-bg);
+    padding: 0.8rem;
+    padding-block: 0.1rem;
+    border-radius: 2rem;
+    /* border: solid; */
+    border-color: var(--project-title-border);
   }
 
 
@@ -244,13 +255,14 @@ const projectStore = useProjectsStore();
     border-radius: 2.5rem;
     transition: 0.5s;
     
-    background: rgb(255, 154, 46);
-    color: #202020;
+    /* background: rgb(255, 154, 46); */
+    /* color: #202020; */
     font-weight: 800;
     width: 32%;margin: auto;
     margin-top: rem;
     cursor: pointer;
-    
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
     }
 
     .portfolio
@@ -335,6 +347,12 @@ const projectStore = useProjectsStore();
 
   .portfolio .packages .box-container {
     justify-content: center;
+  }
+  .more-btn{
+    color: var(--more-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-color: transparent;
   }
   
   @media (max-width: 380px) {

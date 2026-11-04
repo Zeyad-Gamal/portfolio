@@ -226,7 +226,8 @@ justify-content: center;
 .btnref:after {
     display:block;
     content: '';
-    border-bottom: solid 3px #db8d76;  
+    /* border-bottom: solid 3px #db8d76;   */
+    border-bottom: solid 3px var(--icon-accent);
 
     transform: scaleX(0);  
     transition: transform 250ms ease-in-out;
@@ -257,15 +258,18 @@ justify-content: center;
     width: 7rem;height: 6rem;justify-content: center;
     border-radius: 50%;
     /* border-color: #2c2765; */
-    border-color: #2c276597;
+    border-color: var(--btn-secondary-border);
     border-style: solid;
     border-width: 0.3rem;
 
 
 
-    background: -webkit-linear-gradient(90deg, rgb(210, 176, 254) 25%, rgb(226, 181, 136) 0%, rgba(234,118,23,1) 90%);
+    /* background: -webkit-linear-gradient(90deg, rgb(210, 176, 254) 25%, rgb(226, 181, 136) 0%, rgba(234,118,23,1) 90%); */
+    /* background: var(--text-secondary); */
+
+    
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: var(--text-secondary);
 
 
     transition: 0.1s;
@@ -338,7 +342,7 @@ justify-content: center;
     /* border-color: var(--black); */
     margin-top: 3rem;
     margin-left: 2rem;
-    color: white;
+    color: var(--text-primary);
     font-size: 3rem;
     padding: 0.8rem 1rem;
     cursor: pointer;
@@ -348,12 +352,13 @@ justify-content: center;
     width: 7rem;height: 6rem;justify-content: center;
     border-radius: 50%;
     /* border-color: #2c2765; */
-    border-color: #2c276597;
 
     border-style: solid;
     border-width: 0.3rem;
     background: none;
-    -webkit-text-fill-color: white;
+    border-color: var(--btn-secondary-border);
+
+    -webkit-text-fill-color: var(--text-primary);
 
   transition: 0.4s;
   
@@ -367,11 +372,11 @@ justify-content: center;
 
 #resume-link-pg1:hover{
     background-position: left;
-    border-color: #fadb12;
+    border-color: var(--accent-color);
     /* border-radius: 50%;
     width: 10%; */
-    -webkit-text-fill-color: #222 ;
-   background-color: #fadb12;
+    /* -webkit-text-fill-color: #222 ; */
+   background-color: rgba(255,255,255,0.06);
     
 }
 
@@ -389,7 +394,7 @@ justify-content: center;
     border-color: #fadb12;
     /* border-radius: 50%;
     width: 10%; */
-    -webkit-text-fill-color: #222 ;
+    /* -webkit-text-fill-color: #222 ; */
     width: 7rem;
 
     border-color: #222;
@@ -423,10 +428,10 @@ justify-content: center;
     border-style: solid;
     border-width: 0.3rem;
     background: none;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: var(--btn-primary-text);
 
   transition: 0.4s;
-  background-color: #222;
+    background-color: var(--btn-primary-bg);
 
    border-radius: 2rem;width: 20rem;
 }
@@ -844,12 +849,33 @@ justify-content: center;
         flex-wrap: wrap;
         gap: 3rem;
         
-    background: rgb(18, 49, 85);
+    /* background: rgb(18, 49, 85);
     background: linear-gradient(
           90deg,
           rgba(18, 49, 85, 1) 6%,
           rgba(178, 115, 63, 1) 90%
-        );
+        ); */
+
+
+            /* background: rgb(18, 49, 85);
+    background: linear-gradient(
+          90deg,
+          rgba(18, 49, 85, 1) 6%,
+          rgb(27, 28, 31) 90%
+        ); */
+
+        /* background: rgb(18, 49, 85);
+    background: linear-gradient(
+          90deg,
+          rgba(18, 49, 85, 1) 6%,
+          rgb(7, 15, 41) 90%
+        ); */
+
+  background: linear-gradient(
+    90deg,
+    #101827 6%,
+    #243B55 90%
+);
         background-size: cover;
         background-position: center;
 }

@@ -84,11 +84,12 @@ export default {
 .services .services-container .box-container .box {
   padding: 2.5rem 2rem;
   text-align: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(244, 113, 5, 0.4) 6%,
     rgba(244, 113, 5, 0.6) 90%
-  );
+  ); */
+  background-color: var(--bg-card);
   cursor: pointer;
   flex: 1 1 22rem; /* كبرت الحجم الأدنى شوية عشان الكروت تشيل الداتا بانسجام */
   border-radius: 2rem;
@@ -145,7 +146,8 @@ export default {
 }
 
 .services .services-container .box-container .box:hover .tag {
-  background: rgba(244, 113, 5, 0.8);
+  background: var(--bg-secondary);
+  /* background: rgba(244, 113, 5, 0.8); */
   border-color: transparent;
 }
 </style>

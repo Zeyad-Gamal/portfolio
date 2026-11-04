@@ -23,7 +23,7 @@
           id="Full-stack-developer-h1"
             class="heading-title about-job-title"
             style="
-              color: #db8d76;
+              color: var(--text-secondary);
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
                 sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-weight: bold;
@@ -76,7 +76,7 @@ I’m passionate about building clean, secure, and reliable software while combi
      
 
         <div class="image-container" >
-          <img src="/src/assets/images/my.png" alt="" style="width: 34rem;transform: rotateY(180deg);margin-bottom: 7rem;filter: grayscale(0.5);" />
+          <img src="/src/assets/images/my.png" alt="" style="width: 34rem;transform: rotateY(180deg);margin-bottom: 7rem;filter: grayscale(0.8);" />
         </div>
       </section>
     </section>
@@ -92,7 +92,7 @@ I’m passionate about building clean, secure, and reliable software while combi
 
 .about{
    
-  background-color: rgba(19, 19, 77, 0.551);
+  background-color: var(--bg-secondary);
   display: flex !important;
   flex-direction: row;
   flex-wrap: wrap; 
@@ -106,7 +106,7 @@ I’m passionate about building clean, secure, and reliable software while combi
     text-align: center;
     align-items: center;
     align-content: center;
-    background: url(/src/assets/images/backgrounds/curves/about-bg.svg);
+    /* background: url(/src/assets/images/backgrounds/curves/about-bg.svg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -118,8 +118,8 @@ I’m passionate about building clean, secure, and reliable software while combi
 }
 
 .about .image-container img{
-    width: 70%;
-    height: 40rem;
+    width: 80% !important;
+    /* height: 40rem; */
 }
 
 .about .content{

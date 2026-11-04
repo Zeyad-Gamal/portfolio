@@ -36,6 +36,154 @@
   --section-gap: 160px;
 }
 
+:root {
+    /* ===== Background ===== */
+    --bg-gradient: linear-gradient(
+        90deg,
+        #0B1220 6%,
+        #1B2A41 90%
+    );
+
+    --bg-primary: #0B1220;
+    --bg-secondary: #111C2E;
+    --bg-card: #162236;
+    --bg-card-hover: #1C2B42;
+
+    /* ===== Brand / Accent ===== */
+    --accent-color: #38BDF8;
+    --accent-hover: #7DD3FC;
+    --accent-muted: rgba(56, 189, 248, 0.12);
+    --accent-border: rgba(56, 189, 248, 0.3);
+
+    /* ===== Headings & Text ===== */
+    --heading-color: #F8FAFC;
+    --text-primary: #E2E8F0;
+    --text-secondary: #A8B4C5;
+    --text-muted: #8493A7;
+
+    /* ===== Buttons ===== */
+    --btn-primary-bg: #38BDF8;
+    --btn-primary-text: #0B1220;
+    --btn-primary-hover: #7DD3FC;
+
+    --btn-secondary-bg: transparent;
+    --btn-secondary-text: #E2E8F0;
+    --btn-secondary-border: #475569;
+    --btn-secondary-hover-bg: rgba(255, 255, 255, 0.06);
+
+    /* ===== Links & Small Actions ===== */
+    --link-color: #38BDF8;
+    --link-hover: #7DD3FC;
+    --more-color: #38BDF8;
+    --more-hover: #7DD3FC;
+
+    /* ===== Borders & Dividers ===== */
+    --border-color: #2B3B50;
+    --border-hover: #475569;
+    --divider-color: rgba(148, 163, 184, 0.16);
+
+    /* ===== Icons ===== */
+    --icon-color: #94A3B8;
+    --icon-accent: #38BDF8;
+    --icon-hover: #7DD3FC;
+
+    /* ===== Skills & Tags ===== */
+    --tag-bg: rgba(56, 189, 248, 0.1);
+    --tag-text: #BAE6FD;
+    --tag-border: rgba(56, 189, 248, 0.2);
+
+    /* ===== Status Colors ===== */
+    --success-color: #4ADE80;
+    --warning-color: #FBBF24;
+    --error-color: #F87171;
+    --info-color: #38BDF8;
+
+    /* ===== Shadows ===== */
+    --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.18);
+    --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.25);
+
+    /* progress bar */
+
+    --progress-bg: #2B3B50;
+    --progress-fill: #38BDF8;
+    --progress-text: #0B1220;
+
+
+
+    /* projects */
+
+    --project-border: #475569;
+    --project-border-hover: #38BDF8;
+    --project-title-bg: rgba(56, 189, 248, 0.12);
+    --project-title-color: #F8FAFC;
+    --project-title-border: rgba(56, 189, 248, 0.25);
+    --project-title-highlight: #38BDF8;
+    --category-bg: #111C2E;
+    --category-text: #38BDF8;
+    /* --project-overlay: linear-gradient(
+    0deg,
+    rgba(11, 18, 32, 0.95) 0%,
+    rgba(11, 18, 32, 0.65) 55%,
+    rgba(11, 18, 32, 0.10) 100%
+); */
+    --project-overlay: rgba(11, 18, 32, 0.78);
+
+
+
+
+    --contact-btn-bg: #38BDF8;
+    --contact-btn-text: #0B1220;
+    --contact-btn-border: #38BDF8;
+    
+    --contact-btn-hover-bg: #7DD3FC;
+    --contact-btn-hover-text: #0B1220;
+    --contact-btn-hover-border: #7DD3FC;
+    
+    --contact-btn-shadow: 0 4px 14px rgba(56, 189, 248, 0.18);
+    --contact-btn-hover-shadow: 0 6px 20px rgba(56, 189, 248, 0.28);
+
+
+    /* Section Headings */
+    --project-section-title: #38BDF8;
+
+    /* Project Metadata */
+    --project-meta-label: #E2E8F0;
+    --project-meta-value: #38BDF8;
+
+    /* Project Content */
+    --project-body-text: #A8B4C5;
+    --project-bullet-color: #38BDF8;
+
+    /* Links */
+    --project-link-color: #38BDF8;
+    --project-link-hover: #7DD3FC;
+
+        /* Live Demo Button */
+    --demo-btn-bg: #38BDF8;
+    --demo-btn-text: #0B1220;
+    --demo-btn-border: #38BDF8;
+
+    --demo-btn-hover-bg: #7DD3FC;
+    --demo-btn-hover-text: #0B1220;
+    --demo-btn-hover-border: #7DD3FC;
+
+    --demo-btn-shadow: 0 4px 14px rgba(56, 189, 248, 0.18);
+    --demo-btn-hover-shadow: 0 6px 20px rgba(56, 189, 248, 0.28);
+
+        /* GitHub Button */
+    --github-btn-bg: transparent;
+    --github-btn-text: #E2E8F0;
+    --github-btn-border: #475569;
+    
+    --github-btn-hover-bg: rgba(255, 255, 255, 0.06);
+    --github-btn-hover-text: #F8FAFC;
+    --github-btn-hover-border: #38BDF8;
+    
+    --github-btn-shadow: none;
+    --github-btn-hover-shadow: 0 4px 14px rgba(56, 189, 248, 0.10);
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);

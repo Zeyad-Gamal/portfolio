@@ -311,6 +311,8 @@ function goBack() {
         width: 100%;
         background-color: rgba(19, 19, 77, 0.551);
         padding-bottom: 15rem;
+    background-color: var(--bg-secondary);
+        
     }
 
 
@@ -374,17 +376,17 @@ function goBack() {
 }
 
 .view-container .content .points ul li{
-  color: #ccc;
+  color: var(--project-body-text);
 }
 
 .view-container .content .points ul,li::marker{
-  color: coral;
+  color: var(--project-bullet-color);
 }
 
 .details .p-name {
   font-size: 4rem !important;
   margin-bottom: 10px;
-    color: coral;
+    color: var(--project-title-color);
   /* color: #fff; */
 }
 
@@ -392,7 +394,7 @@ function goBack() {
   line-height: 1.6;
   /* font-size: 16px; */
   font-size: 1.7rem;
-  color: #ddd;
+  color: var(--project-body-text);
 }
 
 .view-container.problem {
@@ -405,7 +407,7 @@ function goBack() {
   line-height: 1.6;
   font-size: 1.7rem;
   font-weight: 800;
-  color: coral;
+  color: var(--project-section-title);
   text-align: left !important;
 }
 
@@ -419,7 +421,7 @@ function goBack() {
 .details .p-address {
   font-size: 3rem !important;
   margin-bottom: 10px;
-    color: coral;
+    color: var(--project-section-title);
   border-bottom-style: dotted;
   border-width: 2px;
   width: fit-content;
@@ -437,14 +439,14 @@ function goBack() {
   line-height: 1.6;
   /* font-size: 16px; */
   font-size: 1.7rem;
-  color: #ddd;
+  color: var(--project-meta-label);
   font-weight: 800;
   flex: 1 1 200px;
 
 }
 
 .details .short-details .p-detail span{
-  color:coral;
+  color: var(--project-meta-value);
   font-size: 1.6rem;font-weight: 600;font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* border-bottom-style: double; */
 }
@@ -462,7 +464,7 @@ function goBack() {
   position: relative;
   bottom: 1rem;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.803);
+  color: var(--project-body-text);
   font-weight: normal;
   /* margin-bottom: 20px;
   */
@@ -511,7 +513,7 @@ function goBack() {
 
 .carousel__slide img{
   /* height: 400px !important; */
-  max-height: 300px;
+  /* max-height: 300px; */
 
 }
 
@@ -552,19 +554,58 @@ function goBack() {
 
 }
 
-.project-details-btn.github{
+/* .project-details-btn.github{
   background-color: #111111a6;
 }
 
 .project-details-btn.github:hover{
   background-color: #111;
-}
+} */
 
 .project-details-btn.demo{
-  background-color: rgb(172, 96, 33);
+  background-color: var(--demo-btn-bg);
+  border-style: solid;
+  border-color: var(--demo-btn-border);
+  box-shadow: var(--demo-btn-shadow);
 }
 .project-details-btn.demo:hover{
-  background-color: rgb(216, 113, 27);
+  background-color: var(--demo-btn-hover-bg);
+  border-color: var(--demo-btn-hover-border);
+  box-shadow: var(--demo-btn-hover-shadow);
+
+}
+
+.project-details-btn.demo span
+,.project-details-btn.demo i{
+  color: var(--demo-btn-text) !important;
+}
+.project-details-btn.demo:hover span
+,.project-details-btn.demo i{
+  color: var(--demo-btn-hover-text) !important;
+}
+
+/* Github button */
+
+.project-details-btn.github{
+  background-color: var(--github-btn-bg);
+  border-style: solid;
+  border-color: var(--github-btn-border);
+  box-shadow: var(--github-btn-shadow);
+}
+.project-details-btn.github:hover{
+  background-color: var(--github-btn-hover-bg);
+  border-color: var(--github-btn-hover-border);
+  box-shadow: var(--github-btn-hover-shadow);
+
+}
+
+.project-details-btn.github span
+,.project-details-btn.github i{
+  color: var(--github-btn-text) !important;
+}
+.project-details-btn.github:hover span
+,.project-details-btn.github i{
+  color: var(--github-btn-hover-text) !important;
 }
 
 .project-details-btn i{

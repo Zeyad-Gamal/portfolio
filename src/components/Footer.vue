@@ -40,7 +40,7 @@
             <i><FontAwesomeIcon icon="fab fa-whatsapp" /></i> Whatsapp
           </a>
           <a  title="Map">
-            <i><FontAwesomeIcon icon="fa-regular fa-map" /></i>{{ site.location }}</a
+            <i><FontAwesomeIcon :icon="['far','map']" /></i>&nbsp;{{ site.location }}</a
           >
          
         </div>

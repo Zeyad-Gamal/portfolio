@@ -1,1 +1,0 @@
-import{_ as o}from"./index-CLpCDwaf.js";import{m as e,l as t}from"./vue-vendor-Bc80EwrH.js";import"./bootstrap-DsKI-cX6.js";import"./icons-h5JpKB8F.js";import"./motion-DZh2JcLn.js";const r={};function c(m,n){return t(),e("h1",null,"Welcome About")}const p=o(r,[["render",c]]);export{p as default};

@@ -161,7 +161,7 @@ onBeforeUnmount(() => {
           <a id="hire-link-pg1" href="#" @click.prevent="scrollToSection('review')" class="main-btn">Hire me</a>
           <a
             id="resume-link-pg1"
-            href="cv/Zeyad_Gamal_Abosetta_DevOps_Cloud_Engineer.pdf"
+            href="cv/Zeyad_Gamal_CV.pdf"
             target="_blank"
             class="main-btn"
             

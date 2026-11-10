@@ -30,6 +30,132 @@ function createProject(project) {
 
 const projectsData = [
 
+        {
+    id: 29,
+    name: "SOC intergrated SCADA and DSS",
+    title: "Industrial Decision Support System",
+    description: "Developed a Smart Factory SCADA and SOC system featuring real-time machine monitoring, sensor data processing, anomaly detection, and AI-powered analysis of industrial faults and cyber threats. Built using Laravel, Flask, Python, and MySQL.",
+    githubName: "https://github.com/Zeyad-Gamal/Smart-Factory-Capstone-project-v1.0.1.git",
+    demo_url: "",
+    images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png"],
+
+    tech: [
+        'php',
+        'laravel',
+        'python',
+        'flask',
+        'mysql',
+        'groq'
+    ],
+
+    points: [
+        'Designed and developed a Smart Factory Monitoring and Control System integrating industrial SCADA operations with a centralized Security Operations Center (SOC).',
+        'Developed Laravel RESTful APIs to manage machine operations, sensor readings, industrial indicators, and real-time factory data.',
+        'Implemented automated sensor monitoring and anomaly detection to identify abnormal machine behavior and generate industrial alerts.',
+        'Built a Flask-based SOC backend to ingest, process, and manage security and operational logs from the SCADA system.',
+        'Integrated an AI-powered agent using Python and Groq LLM to analyze incoming logs, classify mechanical faults and potential cyberattacks, and recommend response actions.',
+        'Implemented a human-in-the-loop incident response workflow, allowing SOC operators to review AI recommendations, approve or reject actions, and trigger automated SCADA responses.'
+    ],
+
+    technologies: [
+    "PHP Used as the primary backend programming language for implementing application logic, business rules, and database operations.",
+    "Laravel Used to develop the SCADA backend, RESTful APIs, machine control endpoints, sensor management, and industrial data processing.",
+    "Python Used to develop the SOC backend and AI agent responsible for log analysis, threat classification, and response recommendations.",
+    "Flask Used to build the SOC backend API for log ingestion, incident management, AI decisions, and integration with the SCADA system.",
+    "MySQL Used as the relational database for storing application data, machine information, sensor readings, and system records.",
+    "REST APIs Used to enable communication and data exchange between the SCADA backend, SOC service, and AI agent.",
+    "Groq API (Llama 3.1) Used to analyze industrial logs, classify mechanical faults and potential cyberattacks, and generate recommended response actions.",
+    "OpenAI Python SDK Used to integrate the AI agent with Groq's OpenAI-compatible API for LLM-based log analysis.",
+    "Flask-SocketIO Used to deliver real-time SOC updates, including incoming logs, AI decisions, and incident status changes.",
+    "Laravel Eloquent ORM Used to interact with the MySQL database and manage application models and relationships."
+],
+
+    idea: {
+        overview: "An intelligent Smart Factory Monitoring and Control System that integrates industrial SCADA operations with a centralized Security Operations Center (SOC). The system combines Laravel, Vue.js, Flask, Python, MySQL, and AI-powered log analysis to provide real-time machine monitoring, sensor data processing, anomaly detection, threat classification, and automated incident response with human approval.",
+
+        problem: "Traditional factory monitoring systems often lack centralized visibility into machine conditions, real-time fault detection, and integrated cybersecurity monitoring. This makes it difficult to distinguish between mechanical failures and potential cyberattacks, respond to abnormal behavior quickly, and maintain secure and reliable industrial operations.",
+
+        solution: "A Smart Factory SCADA and SOC system was developed to centralize industrial monitoring, machine control, and security incident management. The system uses Laravel APIs to process machine and sensor data, while a Flask-based SOC backend collects and analyzes system logs using an AI-powered agent integrated with Groq LLM. It classifies potential mechanical faults and cyber threats, generates recommended response actions, and provides a human-in-the-loop approval workflow to trigger appropriate SCADA actions such as machine shutdown, isolation, or maintenance alerts."
+    },
+
+    type: "backend",
+    role: "solo",
+    duration: "1 month",
+    status: "Completed",
+    year: "2026"
+},
+
+{
+    id: 30,
+    name: "SOC Integrated SCADA and DSS",
+    title: "DevOps Infrastructure & CI/CD Pipeline",
+    description: "Designed and implemented a containerized DevOps environment for a Smart Factory SCADA and SOC system, using Docker, Jenkins, and Kubernetes to automate application deployment, manage services, and provide scalable infrastructure.",
+    githubName: "https://github.com/Zeyad-Gamal/Smart-Factory-Capstone-project-v1.0.1.git",
+    demo_url: "",
+    images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png"],
+
+    tech: [
+    'docker',
+    'kubernetes',
+    'jenkins',
+    'aws',
+    'linux',
+    'nginx',
+    'prometheus',
+    'grafana',
+    'loki',
+    'mysql'
+    ],
+
+    points: [
+        'Designed and implemented a containerized infrastructure for the Smart Factory SCADA and SOC system using Docker.',
+        'Created Dockerfiles and Docker Compose configurations to build and orchestrate application services across isolated containers.',
+        'Published versioned application images to Docker Hub for centralized image management and deployment.',
+        'Implemented a Jenkins CI/CD pipeline to automate application build, container image publishing, and deployment workflows.',
+        'Deployed the application on Kubernetes using Deployments, Services, ConfigMaps, Secrets, and Persistent Volume Claims.',
+        'Configured Kubernetes Ingress, Network Policies, RBAC, and Horizontal Pod Autoscaling to manage application access, security, and scalability.'
+    ],
+
+    technologies: [
+    "AWS Used as the cloud infrastructure platform for hosting and managing application resources.",
+    "Docker Used to containerize the Laravel backend, Vue.js frontend, Flask SOC service, and Python AI agent.",
+    "Docker Compose Used to orchestrate application containers and configure service communication in the local environment.",
+    "Docker Hub Used as the container registry for storing and distributing versioned application images.",
+    "Jenkins Used to automate CI/CD workflows for building, publishing, and deploying application components.",
+    "Kubernetes Used to orchestrate containerized services, manage deployments, service discovery, networking, and scaling.",
+    "Kubernetes Deployments Used to manage application replicas and rolling updates.",
+    "Kubernetes Services Used to provide internal networking and service discovery between application components.",
+    "Kubernetes Ingress Used to manage external HTTP access and route traffic to application services.",
+    "ConfigMaps & Secrets Used to manage application configuration and sensitive environment variables.",
+    "Persistent Volume Claims (PVC) Used to provide persistent storage for stateful application components.",
+    "Network Policies Used to control communication between Kubernetes workloads.",
+    "RBAC Used to manage permissions and control access to Kubernetes resources.",
+    "Horizontal Pod Autoscaler (HPA) Used to automatically scale application replicas based on resource utilization.",
+    "Prometheus Used to collect and monitor infrastructure and application metrics.",
+    "Grafana Used to visualize monitoring metrics through dashboards and track system performance.",
+    "Loki Used to aggregate and store application logs for centralized log monitoring and troubleshooting.",
+    "Nginx Used as the frontend web server and reverse proxy for routing application requests.",
+    "Linux Used as the operating system environment for infrastructure and container management.",
+    "Git & GitHub Used for source control, version tracking, and CI/CD integration."
+    ],
+
+    idea: {
+        overview: "A containerized DevOps infrastructure for a Smart Factory SCADA and SOC system. The environment combines Docker, Docker Compose, Jenkins, Docker Hub, and Kubernetes to provide automated build and deployment workflows, service orchestration, internal networking, persistent storage, and scalable application management.",
+
+        problem: "Deploying a multi-service application manually can lead to inconsistent environments, complex service configuration, deployment difficulties, and limited scalability. The Smart Factory system required a reliable infrastructure capable of running multiple interconnected services while maintaining consistent deployments, controlled networking, and efficient application management.",
+
+        solution: "Implemented a containerized infrastructure using Docker and Docker Compose, with Jenkins automating the CI/CD workflow and Docker Hub managing application images. Kubernetes was used to deploy and orchestrate the application services through Deployments, Services, Ingress, ConfigMaps, Secrets, and persistent storage. Additional configurations such as Network Policies, RBAC, and HPA improved infrastructure security, access control, and scalability."
+    },
+
+    type: "devops",
+    role: "Team",
+    duration: "1 month",
+    status: "Completed",
+    year: "2026"
+},
+
+
+
     {
     id: 28,
     name: "Dokkanco",

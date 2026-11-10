@@ -12,7 +12,7 @@ import { createPinia } from 'pinia'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-// استورد الأيقونات اللي بتستخدمها فقط
+
 import {
   faGithub,
   faLinkedin,

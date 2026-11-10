@@ -61,7 +61,8 @@ onMounted(() => {
   position: relative;
 
   color: whitesmoke;
-  font-family: cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
   font-size: 5rem;
   text-align: center;
   z-index: 10000; /* above spinner if needed */
